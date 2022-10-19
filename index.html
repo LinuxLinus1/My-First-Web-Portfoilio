@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="responsiveness.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
+        <div class="scrollbar" id="style-1">
+			<div class="force-overflow"></div>
+		</div>
         <nav class="navbar">
             <div><a href="C:\Users\hp\Desktop\WEBDESIGN\WebDesign II\Web Design\my personal project\Linux Portfolio\index.html"><img src="./assets/images/my logo.png" alt="logo" class="logo"></a></div>
             
@@ -20,8 +23,8 @@
             <div><a href="#" class="nav-link">HOME</a></div>
             <div><a href="#abt" class="nav-link">ABOUT</a></div>
             <div><a href="#ptflo" class="nav-link">PORTFOLIO</a></div>
-            <div><a href="#svs" class="nav-link">WHAT WE DO</a></div>
-            <div><a href="#" class="nav-link con">CONTACT</a></div>
+            <div><a href="#svs" class="nav-link">SERVICES</a></div>
+            <div><a href="#cnt" class="nav-link con">CONTACT</a></div>
             </div>
             <label class="hamburger">
                <i class="fa fa-bars"></i>
@@ -54,9 +57,8 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    <div class="content">
-        <br id="abt">
-       <h1 class="abtus">ABOUT</h1>
+    <div class="content" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+       <h1 class="abtus" id="abt">ABOUT</h1>
        <p class="abtusp">We're close team of creatives, Designers and developers who work together to create beautiful, engaging digital experience.</p>
        <br><br>
 
@@ -75,7 +77,7 @@
         </div>
        </div>
     </div>
-    <div class="content2">
+    <div class="content2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-easing="ease-in-out">
         <h1 class="ptflo" id="ptflo">PORTFOLIO</h1>
         <p class="ptflop">We believe our work speaks for itself. Browse some of our self done projects below.</p>
         <div class="ptflolists">
@@ -103,12 +105,82 @@
         </div>
         
     </div>
-    <div class="content3">
+    <div class="content3" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
         <h1 class="srvcs" id="svs">SERVICES</h1>
         <p class="srvcsp">check out the Services list below to get a general idea of what we are capable of delivering.</p>
-
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/images/cards/mission_1.png" alt="" class="cardimg">
+                <h2 class="cardh2">LOGO DESIGN</h2>
+                <p class="cardp">We create stunning Brand identity for your company/Brand. It's creative & Affordable.</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/cards/mission_1.png" alt="" class="cardimg">
+                <h2 class="cardh2">LOGO DESIGN</h2>
+                <p class="cardp">We create stunning Brand identity for your company/Brand. It's creative & Affordable.</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/cards/mission_1.png" alt="" class="cardimg">
+                <h2 class="cardh2">LOGO DESIGN</h2>
+                <p class="cardp">We create stunning Brand identity for your company/Brand. It's creative & Affordable.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/images/cards/mission_1.png" alt="" class="cardimg">
+                <h2 class="cardh2">LOGO DESIGN</h2>
+                <p class="cardp">We create stunning Brand identity for your company/Brand. It's creative & Affordable.</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/cards/mission_1.png" alt="" class="cardimg">
+                <h2 class="cardh2">LOGO DESIGN</h2>
+                <p class="cardp">We create stunning Brand identity for your company/Brand. It's creative & Affordable.</p>
+            </div>
+            <div class="card">
+                <img src="./assets/images/cards/mission_1.png" alt="" class="cardimg">
+                <h2 class="cardh2">LOGO DESIGN</h2>
+                <p class="cardp">We create stunning Brand identity for your company/Brand. It's creative & Affordable.</p>
+            </div>
+        </div>
     </div>
+    <div class="content4" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in">
+        <h1 class="cntc" id="cnt">CONTACT</h1>
+        <p class="cntcp">Reach out to us as we are always available to attend to you!</p>
+        <br>
+        <form action="" class="frms" autocapitalize="on">
+            <div class="frm">
+            <p class="frmp">Your Name:*</p>
+            <input type="text"></div>
+            <div class="frm">
+                <p class="frmp">Your Email:*</p>
+                <input type="email"></div>
+            <div class="frm">
+                <p class="frmp">Tell us everything:*</p>
+                <textarea name="message"></textarea></div> 
+            <button type="submit">SUBMIT</button>   
+        </form>
+        <div class="cntcicons">
+            <div class="cntch2">tap on any of our social media links below to also contact</div>
+            <div>
+            <a href="https://web.facebook.com/nzereogu.juniorlinus" target="_blank"><img class="ctncicon" src="./assets/images/icons/facebook.png" alt="facebook" width="45px"></a>
+            <a href="https://wa.me/+23408187737471"><img class="ctncicon" src="./assets/images/icons/whatsapp.png" alt="whatsapp" width="45px"></a>
+            <a href="https://www.instagram.com/linux_gfx/" target="_blank"><img class="ctncicon" src="./assets/images/icons/insta.png" alt="insta" width="45px"></a>
+            <a href="mailto:@nzelinux@gmail.com &subject=Please edit to suit your title &body=Please add your body" target="_blank"><img class="ctncicon" src="./assets/images/icons/email.png" alt="mail" width="45px"></a>
+            <a href="https://twitter.com/linux_gfx" target="_blank"><img class="ctncicon" src="./assets/images/icons/twitter.png" alt="tweet" width="45px"></a>
+        </div>
+        </div>
+    </div>
+    <footer class="ft" data-aos="zoom-in" data-aos-easing="ease-in" >
+        <a href="#"><img src="./assets/images/icons/go uppppp.png" alt="go up" width="20px"></a>
+        <div class="ft1">Made With Love</div>
+        <div class="ft2">Designed by <span style="color: rgb(233, 225, 3);">LINUX LINUS</span></div>
+        <hr class="ftline">
+    </footer>
 </body>
 <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 <!-- <script src="./assets/js/bootstrap.js"></script> -->
 </html>
