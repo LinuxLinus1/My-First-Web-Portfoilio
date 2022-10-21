@@ -93,3 +93,25 @@ dropdown.addEventListener('click', ()=>{
         document.querySelector('.nav-links').style.right = '-60%'
     }
 })
+
+const grid = Array.from(document.querySelector('.images').querySelectorAll('img'))
+const tabs = Array.from(document.querySelectorAll('.tabs'))
+
+function ontab(a, b) {
+    tabs.forEach((tab)=>{
+        tab.classList.remove('active-ptf')
+    })
+    tabs[a].classList.add('active-ptf')
+    
+    grid.forEach((img)=>{
+        img.style.display = 'none'
+    })
+    for (let img of grid) {
+        if(img.classList.contains(b)) {
+            img.style.display = 'inline'
+        } else {
+            img.style.display = 'none'
+        }
+    }
+}
+ontab(0, 'poster')

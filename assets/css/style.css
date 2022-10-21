@@ -244,8 +244,12 @@ h2 {
     font-weight:bold;
     color: white;
     cursor: pointer;
+    transition: all ease .3s;
 }
 .ptflolist:hover{
+    color: #8A8A8A;
+}
+.active-ptf{
     color: #8A8A8A;
 }
 .ptfloimgs{
@@ -253,8 +257,11 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    max-width: 80%;
+    /* margin: auto; */
+    /* max-width: 80%; */
+}
+.images img{
+    transition: all ease .3s;
 }
 .motn{
     color: white;
@@ -450,16 +457,16 @@ button:hover{
 }
 .ft1{
     color: #717171;
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 2px 0;
 }
 .ft2{
     color: #8A8A8A;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     padding: 2px 0 10px 0;
 }
 .ftline{
     color: #8A8A8A;
-    width: 25vw;
+    width: 20vw;
 }
