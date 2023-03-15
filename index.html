@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <!-- <div id="loader"></div> -->
     <header>
         <div class="scrollbar" id="style-1">
 			<div class="force-overflow"></div>
@@ -87,15 +88,15 @@
             <div class="ptflolist tabs" onclick="ontab(3, 'bookworks')">SOURVENIRS & BOOKWORKS</div>
         </div>
         <div class="ptfloimgs images">
-            <div>
+            <div class="active-image-list">
                 <img src="./assets/images/Posters/carousel ad.jpg" alt="" style="width:350px;" class="poster">
                 <img src="./assets/images/Posters/mocked (2).jpg" alt="" style="width:350px;" class="poster">
                 <img src="./assets/images/Posters/bundo mckd.jpg" alt="" style="width:350px;" class="poster"> 
             </div>
             <div>
-            <img src="./assets/images/Posters/kike 1.jpg" alt="" style="width:350px;" class="poster">
-            <img src="./assets/images/Posters/Tony gadgets ad.jpg" alt="" style="width:350px;" class="poster">
-            <img src="./assets/images/Posters/beeekay work mocked.jpg" alt="" style="width:350px;" class="poster">
+                <img src="./assets/images/Posters/kike 1.jpg" alt="" style="width:350px;" class="poster">
+                <img src="./assets/images/Posters/Tony gadgets ad.jpg" alt="" style="width:350px;" class="poster">
+                <img src="./assets/images/Posters/beeekay work mocked.jpg" alt="" style="width:350px;" class="poster">
             </div>
             
             <div>
@@ -135,17 +136,20 @@
         <div class="vids">
             <video controls autoplay muted src="./assets/images/motion graphics/Comp 11_1.mp4" width="450px" class="vid"></video>
             <video controls autoplay muted src="./assets/images/motion graphics/Comp 1_3.mp4" width="450px" class="vid"></video>
-        </div>
-        
+        </div>     
     </div>
     <div class="content3" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
-        <h1 class="srvcs" id="svs">SERVICES</h1>
-        <p class="srvcsp">check out the Services list below to get a general idea of what we are capable of delivering.</p>
+        <div>
+            <h1 class="srvcs" id="svs">SERVICES</h1>
+            <p class="srvcsp">check out the Services list below to get a general idea of what we are capable of delivering.</p>
+        </div>
         <div class="cards">
             <div class="card">
-                <div class="incard"><img src="./assets/images/icons/logo icon.png" alt="" class="cardimg" style="width: 65px;"></div>
+                <div class="incard"><img src="./assets/images/icons/software d icon.png" alt="" class="cardimg" style="width: 137px;"></div>
+                <div class="cardinfo">
                 <h2 class="cardh2">LOGO DESIGN</h2>
                 <p class="cardp">We create stunning Brand identity for your company/Brand. It's creative & Affordable.</p>
+                </div>
             </div>
             <div class="card">
                 <img src="./assets/images/icons/social media icon.png" alt="" class="cardimg" style="width: 160px;">
@@ -160,14 +164,14 @@
         </div>
         <div class="cards">
             <div class="card">
-                <img src="./assets/images/icons/motion g icon.png" alt="" class="cardimg" style="width: 88px;">
+                <img src="./assets/images/icons/motion g icon.png" alt="" class="cardimg special" style="width: 88px;">
                 <h2 class="cardh2">MOTION GRAPHICS</h2>
-                <p class="cardp">Looking to design a motion graphic or cool video intro for general or marketing purposes? You're at the right place.</p>
+                <p class="cardp">We offer professional and exciting motion graphics to suit your purpose.</p>
             </div>
             <div class="card">
                 <img src="./assets/images/icons/web dev icon.png" alt="" class="cardimg" style="width: 110px;">
                 <h2 class="cardh2">WEB DEVELOPMENT</h2>
-                <p class="cardp">We've got skills in offering you professional, outstanding and fully responsive website to suit your purpose.</p>
+                <p class="cardp">We've got skills in offering you professional, outstanding and fully responsive website.</p>
             </div>
             <div class="card">
                 <img src="./assets/images/icons/software d icon.png" alt="" class="cardimg" style="width: 135px;">
@@ -204,8 +208,8 @@
         </div>
     </div>
     <footer class="ft" data-aos="zoom-in"data-aos-duration="1000" data-aos-easing="ease-in" >
-        <a href="#"><img src="./assets/images/icons/go uppppp.png" alt="go up" width="20px"></a>
-        <div class="ft1">Made With Love</div>
+        <a href="#"><img src="./assets/images/icons/go uppppp.png" alt="go up" width="20px" class="arrow"></a>
+        <!-- <div class="ft1">Made With Love</div> -->
         <div class="ft2">Designed by <span style="color: rgb(233, 225, 3);">LINUX LINUS</span></div>
         <hr class="ftline">
     </footer>

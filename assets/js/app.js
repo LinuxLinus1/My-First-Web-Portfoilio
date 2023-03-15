@@ -37,6 +37,25 @@ function carousel() {
 }
 carousel();
 
+
+// (()=>{
+//     console.log(window.innerWidth);
+//     if (window.innerWidth <= 767) {
+//         console.log('width');
+//         let images = document.querySelector('ptfloimgs').querySelectorAll(div)
+
+//         for (let i = 0; i < images.length; i++) {
+//             if (div.classList.contains("active-image-list")) {
+//                 images[i].style.display = 'flex';
+//             } else {
+//                 images[i].style.display = 'none';
+//             }
+//         }
+//     }
+// })();
+
+
+
 function nextFn() {
     if (temp == (images.length-1)) {
         temp = 0;
