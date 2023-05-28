@@ -100,7 +100,6 @@ third.addEventListener('click', ()=>{
     carousel();
 })
 
-
 const dropdown = document.querySelector(".hamburger");
 const link = document.getElementsByClassName("nav-links");
 dropdown.addEventListener('click', ()=>{
